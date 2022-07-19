@@ -1,0 +1,148 @@
+body{
+    background-color: powderblue;
+}
+.mask1 {
+  -webkit-mask-image: url(image.png);
+  mask-image: url(image.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;  
+  background-size: cover;
+}
+
+h1{
+    color:turquoise;
+    text-align: center;
+}
+h2{
+    color: darkslategrey;
+}
+p{
+    font-size: large;
+}
+div{
+    font-family: serif;
+    font-size: larger;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(158, 202, 223);
+    position: relative;
+    animation-name: img;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  
+@keyframes img {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+  }
+  h2{
+    text-align: center;
+
+  }
+  p{
+    text-align: left;
+  }
+span{
+    color: darkred;
+}
+p {
+  font-size: 40px;
+  padding: 40px;
+  color: black;
+}
+#mask1 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url("https://images.ctfassets.net/i3tkg7dt3kro/1bLba9SYMjI7pC1kcZuZdC/9bca83ce071e423f154d6e467bfe7a17/20-annual-flowers-hero.jpeg") no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+.search {
+  padding: 10px;
+  color: blueviolet;
+  border-radius: 4px;
+  display: flex;
+  align-items: right;
+}
+.search :is(input,button) {
+  color: inherit;
+  border: none;
+  background: transparaent;
+  outline: none;
+}
+.search__input{
+  width: 0;
+  transition: width  .5s;
+}
+.search__btn{
+width: 25px;
+height: 25px;
+display: grid;
+place-items: center;
+cursor:optional;
+}
+.search:focus-within input{
+  width: 200px;
+}
+::placeholder{
+  color: inherit;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #56949c;
+}
+
+.button1:hover {
+  background-color: #817cd3;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #e919c6;
+}
+
+.button2:hover {
+  background-color: #dd8fc9;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #61116b;
+}
+
+.button3:hover {
+  background-color: #681f68;
+  color: white;
+}
+
