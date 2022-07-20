@@ -145,4 +145,10 @@ cursor:optional;
   background-color: #681f68;
   color: white;
 }
-
+#rcorners {
+  border-radius: 15px 50px;
+  background: #80e3f5;
+  padding: 40px; 
+  width: 1000px;
+  height: 150px; 
+} 
